@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC53A2DC240E2F5200EECC14 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC53A2DB240E2F5200EECC14 /* IQKeyboardManagerSwift */; };
+		DC53A2DE240E72F500EECC14 /* AmortizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53A2DD240E72F500EECC14 /* AmortizationView.swift */; };
+		DC53A2E0240E740C00EECC14 /* AmortizationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53A2DF240E740C00EECC14 /* AmortizationCell.swift */; };
+		DC85DFEC24051496003ECCF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC85DFEB24051496003ECCF5 /* AppDelegate.swift */; };
+		DC85DFEE24051496003ECCF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC85DFED24051496003ECCF5 /* SceneDelegate.swift */; };
+		DC85DFF024051496003ECCF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC85DFEF24051496003ECCF5 /* ContentView.swift */; };
+		DC85DFF224051498003ECCF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC85DFF124051498003ECCF5 /* Assets.xcassets */; };
+		DC85DFF524051498003ECCF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC85DFF424051498003ECCF5 /* Preview Assets.xcassets */; };
+		DC85DFF824051498003ECCF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC85DFF624051498003ECCF5 /* LaunchScreen.storyboard */; };
+		DC85E00324051498003ECCF5 /* Loan_CaculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC85E00224051498003ECCF5 /* Loan_CaculatorTests.swift */; };
+		DC85E01324051568003ECCF5 /* LoanCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC85E01224051568003ECCF5 /* LoanCalculatorViewModel.swift */; };
+		DC85E01524051851003ECCF5 /* LoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC85E01424051851003ECCF5 /* LoanModel.swift */; };
+		DC85E017240518FC003ECCF5 /* AmortizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC85E016240518FC003ECCF5 /* AmortizationModel.swift */; };
+		DC85E019240576AC003ECCF5 /* LoanSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC85E018240576AC003ECCF5 /* LoanSummaryView.swift */; };
+		DC9932C0240E21FB0093A9D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC9932C2240E21FB0093A9D2 /* Localizable.strings */; };
+		DC9D9E0C240A2DF500556F3E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D9E0B240A2DF500556F3E /* Extensions.swift */; };
+		DC9D9E0E240A2E5F00556F3E /* CircleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D9E0D240A2E5F00556F3E /* CircleChartView.swift */; };
+		DCF24D6A24101B8F0040745F /* HelpsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF24D6924101B8F0040745F /* HelpsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC85DFFF24051498003ECCF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC85DFE024051496003ECCF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC85DFE724051496003ECCF5;
+			remoteInfo = "Loan Caculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC53A2DD240E72F500EECC14 /* AmortizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationView.swift; sourceTree = "<group>"; };
+		DC53A2DF240E740C00EECC14 /* AmortizationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationCell.swift; sourceTree = "<group>"; };
+		DC85DFE824051496003ECCF5 /* Loan Caculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loan Caculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC85DFEB24051496003ECCF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC85DFED24051496003ECCF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC85DFEF24051496003ECCF5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC85DFF124051498003ECCF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC85DFF424051498003ECCF5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC85DFF724051498003ECCF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC85DFF924051498003ECCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC85DFFE24051498003ECCF5 /* Loan CaculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Loan CaculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC85E00224051498003ECCF5 /* Loan_CaculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan_CaculatorTests.swift; sourceTree = "<group>"; };
+		DC85E00424051498003ECCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC85E01224051568003ECCF5 /* LoanCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCalculatorViewModel.swift; sourceTree = "<group>"; };
+		DC85E01424051851003ECCF5 /* LoanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanModel.swift; sourceTree = "<group>"; };
+		DC85E016240518FC003ECCF5 /* AmortizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationModel.swift; sourceTree = "<group>"; };
+		DC85E018240576AC003ECCF5 /* LoanSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryView.swift; sourceTree = "<group>"; };
+		DC9932BD240E21AD0093A9D2 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		DC9932C1240E21FB0093A9D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DC9932C3240E22020093A9D2 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DC9D9E0B240A2DF500556F3E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DC9D9E0D240A2E5F00556F3E /* CircleChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleChartView.swift; sourceTree = "<group>"; };
+		DCF24D6924101B8F0040745F /* HelpsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC85DFE524051496003ECCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC53A2DC240E2F5200EECC14 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC85DFFB24051498003ECCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC85DFDF24051496003ECCF5 = {
+			isa = PBXGroup;
+			children = (
+				DC85DFEA24051496003ECCF5 /* Loan Caculator */,
+				DC85E00124051498003ECCF5 /* Loan CaculatorTests */,
+				DC85DFE924051496003ECCF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC85DFE924051496003ECCF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC85DFE824051496003ECCF5 /* Loan Caculator.app */,
+				DC85DFFE24051498003ECCF5 /* Loan CaculatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC85DFEA24051496003ECCF5 /* Loan Caculator */ = {
+			isa = PBXGroup;
+			children = (
+				DC85E00D24051519003ECCF5 /* Features */,
+				DC85DFEB24051496003ECCF5 /* AppDelegate.swift */,
+				DC85DFED24051496003ECCF5 /* SceneDelegate.swift */,
+				DC85DFEF24051496003ECCF5 /* ContentView.swift */,
+				DC85DFF124051498003ECCF5 /* Assets.xcassets */,
+				DC85DFF624051498003ECCF5 /* LaunchScreen.storyboard */,
+				DC85DFF924051498003ECCF5 /* Info.plist */,
+				DC85DFF324051498003ECCF5 /* Preview Content */,
+				DC9932C2240E21FB0093A9D2 /* Localizable.strings */,
+			);
+			path = "Loan Caculator";
+			sourceTree = "<group>";
+		};
+		DC85DFF324051498003ECCF5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC85DFF424051498003ECCF5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC85E00124051498003ECCF5 /* Loan CaculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC85E00224051498003ECCF5 /* Loan_CaculatorTests.swift */,
+				DC85E00424051498003ECCF5 /* Info.plist */,
+			);
+			path = "Loan CaculatorTests";
+			sourceTree = "<group>";
+		};
+		DC85E00D24051519003ECCF5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DC85E00E24051525003ECCF5 /* Caculator */,
+				DC9D9E0B240A2DF500556F3E /* Extensions.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		DC85E00E24051525003ECCF5 /* Caculator */ = {
+			isa = PBXGroup;
+			children = (
+				DC85E01124051545003ECCF5 /* Models */,
+				DC85E0102405153D003ECCF5 /* Views */,
+				DC85E00F24051532003ECCF5 /* ViewModels */,
+			);
+			path = Caculator;
+			sourceTree = "<group>";
+		};
+		DC85E00F24051532003ECCF5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DC85E01224051568003ECCF5 /* LoanCalculatorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DC85E0102405153D003ECCF5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC85E018240576AC003ECCF5 /* LoanSummaryView.swift */,
+				DC9D9E0D240A2E5F00556F3E /* CircleChartView.swift */,
+				DC53A2DD240E72F500EECC14 /* AmortizationView.swift */,
+				DC53A2DF240E740C00EECC14 /* AmortizationCell.swift */,
+				DCF24D6924101B8F0040745F /* HelpsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DC85E01124051545003ECCF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC85E01424051851003ECCF5 /* LoanModel.swift */,
+				DC85E016240518FC003ECCF5 /* AmortizationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC85DFE724051496003ECCF5 /* Loan Caculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC85E00724051498003ECCF5 /* Build configuration list for PBXNativeTarget "Loan Caculator" */;
+			buildPhases = (
+				DC85DFE424051496003ECCF5 /* Sources */,
+				DC85DFE524051496003ECCF5 /* Frameworks */,
+				DC85DFE624051496003ECCF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Loan Caculator";
+			packageProductDependencies = (
+				DC53A2DB240E2F5200EECC14 /* IQKeyboardManagerSwift */,
+			);
+			productName = "Loan Caculator";
+			productReference = DC85DFE824051496003ECCF5 /* Loan Caculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC85DFFD24051498003ECCF5 /* Loan CaculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC85E00A24051498003ECCF5 /* Build configuration list for PBXNativeTarget "Loan CaculatorTests" */;
+			buildPhases = (
+				DC85DFFA24051498003ECCF5 /* Sources */,
+				DC85DFFB24051498003ECCF5 /* Frameworks */,
+				DC85DFFC24051498003ECCF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC85E00024051498003ECCF5 /* PBXTargetDependency */,
+			);
+			name = "Loan CaculatorTests";
+			productName = "Loan CaculatorTests";
+			productReference = DC85DFFE24051498003ECCF5 /* Loan CaculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC85DFE024051496003ECCF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Steve Dao";
+				TargetAttributes = {
+					DC85DFE724051496003ECCF5 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					DC85DFFD24051498003ECCF5 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = DC85DFE724051496003ECCF5;
+					};
+				};
+			};
+			buildConfigurationList = DC85DFE324051496003ECCF5 /* Build configuration list for PBXProject "Loan Caculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+			);
+			mainGroup = DC85DFDF24051496003ECCF5;
+			packageReferences = (
+				DC53A2DA240E2F5200EECC14 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = DC85DFE924051496003ECCF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC85DFE724051496003ECCF5 /* Loan Caculator */,
+				DC85DFFD24051498003ECCF5 /* Loan CaculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC85DFE624051496003ECCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC85DFF824051498003ECCF5 /* LaunchScreen.storyboard in Resources */,
+				DC9932C0240E21FB0093A9D2 /* Localizable.strings in Resources */,
+				DC85DFF524051498003ECCF5 /* Preview Assets.xcassets in Resources */,
+				DC85DFF224051498003ECCF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC85DFFC24051498003ECCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC85DFE424051496003ECCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC85E01524051851003ECCF5 /* LoanModel.swift in Sources */,
+				DC85E019240576AC003ECCF5 /* LoanSummaryView.swift in Sources */,
+				DCF24D6A24101B8F0040745F /* HelpsView.swift in Sources */,
+				DC9D9E0E240A2E5F00556F3E /* CircleChartView.swift in Sources */,
+				DC53A2DE240E72F500EECC14 /* AmortizationView.swift in Sources */,
+				DC85E01324051568003ECCF5 /* LoanCalculatorViewModel.swift in Sources */,
+				DC85E017240518FC003ECCF5 /* AmortizationModel.swift in Sources */,
+				DC53A2E0240E740C00EECC14 /* AmortizationCell.swift in Sources */,
+				DC85DFEC24051496003ECCF5 /* AppDelegate.swift in Sources */,
+				DC9D9E0C240A2DF500556F3E /* Extensions.swift in Sources */,
+				DC85DFEE24051496003ECCF5 /* SceneDelegate.swift in Sources */,
+				DC85DFF024051496003ECCF5 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC85DFFA24051498003ECCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC85E00324051498003ECCF5 /* Loan_CaculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC85E00024051498003ECCF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC85DFE724051496003ECCF5 /* Loan Caculator */;
+			targetProxy = DC85DFFF24051498003ECCF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC85DFF624051498003ECCF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC85DFF724051498003ECCF5 /* Base */,
+				DC9932BD240E21AD0093A9D2 /* vi */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DC9932C2240E21FB0093A9D2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9932C1240E21FB0093A9D2 /* en */,
+				DC9932C3240E22020093A9D2 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC85E00524051498003ECCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC85E00624051498003ECCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC85E00824051498003ECCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Loan Caculator/Preview Content\"";
+				DEVELOPMENT_TEAM = 8C98S3WY53;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Loan Caculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duyquang.loancaculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC85E00924051498003ECCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Loan Caculator/Preview Content\"";
+				DEVELOPMENT_TEAM = 8C98S3WY53;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Loan Caculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duyquang.loancaculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC85E00B24051498003ECCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8C98S3WY53;
+				INFOPLIST_FILE = "Loan CaculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stevedao.Loan-CaculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loan Caculator.app/Loan Caculator";
+			};
+			name = Debug;
+		};
+		DC85E00C24051498003ECCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8C98S3WY53;
+				INFOPLIST_FILE = "Loan CaculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stevedao.Loan-CaculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loan Caculator.app/Loan Caculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC85DFE324051496003ECCF5 /* Build configuration list for PBXProject "Loan Caculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC85E00524051498003ECCF5 /* Debug */,
+				DC85E00624051498003ECCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC85E00724051498003ECCF5 /* Build configuration list for PBXNativeTarget "Loan Caculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC85E00824051498003ECCF5 /* Debug */,
+				DC85E00924051498003ECCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC85E00A24051498003ECCF5 /* Build configuration list for PBXNativeTarget "Loan CaculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC85E00B24051498003ECCF5 /* Debug */,
+				DC85E00C24051498003ECCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC53A2DA240E2F5200EECC14 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC53A2DB240E2F5200EECC14 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC53A2DA240E2F5200EECC14 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DC85DFE024051496003ECCF5 /* Project object */;
+}

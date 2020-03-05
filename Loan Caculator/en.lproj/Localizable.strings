@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  Loan Caculator
+
+  Created by Steve Dao on 3/3/20.
+  Copyright © 2020 Steve Dao. All rights reserved.
+*/
+
+"loan_calculator" = "Loan Calculator";
+"paid_off" = "Paid off";
+"repayment" = "Repayment";
+"total_interest" = "Total interest";
+"monthly_paid" = "Monthly paid";
+"first_month_paid" = "First month paid";
+"loan_amount" = "Loan amount";
+"loan_term" = "Loan term";
+"years" = "years";
+"months" = "months";
+"interest_rate" = "Interest rate";
+"loan_interest_placeholder" = "per year";
+"clear" = "clear";
+"amortization_table" = "Amortization table";
+
+"invalid_input" = "Invalid input";
+"invalid_interest" = "The interest must be greater than 0 & less than 100";
+"invalid_term" = "Loan term must be greater than 0";
+
+"month" = "Month";
+"principal" = "Principal";
+"interest" = "Interest";
+"of" = "of";
+"interest_type" = "Interest type";
+
+"frm" = "Flat rate method";
+"rbm" = "Reduce balance method";
+
+"frm_hint" = "A Flat rate of interest means the amount of interest paid is fixed. In this method, the amount of interest is calculated on the original loan amount throughout its tenure, thus interest remains constant and does not reduce as the principle amount decreases with your monthly repayment.";
+"rbm_hint" = "In reducing balance method, the interest to be paid is revised every month on the outstanding loan amount. In this method, the EMI includes interest payable for the outstanding loan in addition to the principal repayment. Now, since principle amount reduces with every EMI payment, the amount of interest payable on it also reduces. Thus, on subsequent EMI payments, the amount towards principle repayment increases";

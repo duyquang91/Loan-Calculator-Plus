@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings
+  Loan Caculator
+
+  Created by Steve Dao on 3/3/20.
+  Copyright © 2020 Steve Dao. All rights reserved.
+*/
+
+"loan_calculator" = "Máy tính lãi suất";
+"paid_off" = "Tất toán";
+"repayment" = "Thanh toán";
+"total_interest" = "Tổng lãi";
+"monthly_paid" = "Thanh toán hàng tháng";
+"first_month_paid" = "Thanh toán tháng đầu";
+"loan_amount" = "Khoản vay";
+"loan_term" = "Kì hạn";
+"years" = "năm";
+"months" = "tháng";
+"interest_rate" = "Lãi suất";
+"loan_interest_placeholder" = "hàng năm";
+"clear" = "xoá";
+"amortization_table" = "Bảng tính";
+
+"invalid_input" = "Số liệu không hợp lệ";
+"invalid_interest" = "Lãi suất phải lớn hơn 0 & nhỏ hơn 100";
+"invalid_term" = "Kì hạn vay phải lớn hơn 0";
+
+"month" = "Tháng";
+"principal" = "Gốc";
+"interest" = "Lãi";
+"of" = "của";
+"interest_type" = "Phương pháp tính lãi";
+
+"frm" = "Dư nợ cố định";
+"rbm" = "Dư nợ giảm dần";
+
+"frm_hint" = "Lãi suất trên dư nợ gốc được tính trên số tiền gốc ban đầu bạn vay trong suốt thời hạn vay";
+"rbm_hint" = "Lãi suất trên dư nợ giảm dần được tính trên số tiền thực tế bạn còn nợ sau khi đã trừ đi phần gốc bạn đã trả trước đó";
+
