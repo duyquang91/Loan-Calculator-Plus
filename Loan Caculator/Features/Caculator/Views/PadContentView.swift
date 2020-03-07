@@ -136,7 +136,7 @@ struct PadContentView: View {
                                 Text("rbm").tag(1).font(.body)
                             }.pickerStyle(SegmentedPickerStyle())
                         }
-                    }.padding(EdgeInsets(top: 0, leading: 4, bottom: 0, trailing: 4))
+                    }.padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                 }
             }
             AmortizationView(amortizations: viewModel.amortizations)
