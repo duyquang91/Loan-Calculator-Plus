@@ -6,7 +6,7 @@
   Copyright © 2020 Steve Dao. All rights reserved.
 */
 
-"loan_calculator" = "Máy tính lãi suất";
+"loan_calculator" = "Tính lãi suất vay";
 "paid_off" = "Tất toán";
 "repayment" = "Thanh toán";
 "total_interest" = "Tổng lãi";

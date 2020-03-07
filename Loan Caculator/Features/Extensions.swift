@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public extension String {
     func toDouble() -> Double? {
@@ -52,5 +53,11 @@ public extension Array {
             let tail = Array(self[distance ..< self.count])
             return head + tail.chunked(by: distance)
         }
+    }
+}
+
+public extension UIDevice {
+    static var isPhone: Bool {
+        return UIDevice.current.userInterfaceIdiom == .phone
     }
 }

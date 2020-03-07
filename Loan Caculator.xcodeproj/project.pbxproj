@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0E57F52412DC1500E2490A /* CopyOnWriteSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC0E57F42412DC1500E2490A /* CopyOnWriteSwift */; };
 		DC53A2DC240E2F5200EECC14 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC53A2DB240E2F5200EECC14 /* IQKeyboardManagerSwift */; };
 		DC53A2DE240E72F500EECC14 /* AmortizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53A2DD240E72F500EECC14 /* AmortizationView.swift */; };
 		DC53A2E0240E740C00EECC14 /* AmortizationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53A2DF240E740C00EECC14 /* AmortizationCell.swift */; };
@@ -21,6 +22,8 @@
 		DC85E01524051851003ECCF5 /* LoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC85E01424051851003ECCF5 /* LoanModel.swift */; };
 		DC85E017240518FC003ECCF5 /* AmortizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC85E016240518FC003ECCF5 /* AmortizationModel.swift */; };
 		DC85E019240576AC003ECCF5 /* LoanSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC85E018240576AC003ECCF5 /* LoanSummaryView.swift */; };
+		DC8D53402413FE33008AB667 /* PhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D533F2413FE33008AB667 /* PhoneContentView.swift */; };
+		DC8D53422413FFBB008AB667 /* PadContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D53412413FFBB008AB667 /* PadContentView.swift */; };
 		DC9932C0240E21FB0093A9D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC9932C2240E21FB0093A9D2 /* Localizable.strings */; };
 		DC9D9E0C240A2DF500556F3E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D9E0B240A2DF500556F3E /* Extensions.swift */; };
 		DC9D9E0E240A2E5F00556F3E /* CircleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9D9E0D240A2E5F00556F3E /* CircleChartView.swift */; };
@@ -55,6 +58,8 @@
 		DC85E01424051851003ECCF5 /* LoanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanModel.swift; sourceTree = "<group>"; };
 		DC85E016240518FC003ECCF5 /* AmortizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationModel.swift; sourceTree = "<group>"; };
 		DC85E018240576AC003ECCF5 /* LoanSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryView.swift; sourceTree = "<group>"; };
+		DC8D533F2413FE33008AB667 /* PhoneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContentView.swift; sourceTree = "<group>"; };
+		DC8D53412413FFBB008AB667 /* PadContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadContentView.swift; sourceTree = "<group>"; };
 		DC9932BD240E21AD0093A9D2 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DC9932C1240E21FB0093A9D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DC9932C3240E22020093A9D2 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0E57F52412DC1500E2490A /* CopyOnWriteSwift in Frameworks */,
 				DC53A2DC240E2F5200EECC14 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +174,8 @@
 				DC53A2DD240E72F500EECC14 /* AmortizationView.swift */,
 				DC53A2DF240E740C00EECC14 /* AmortizationCell.swift */,
 				DCF24D6924101B8F0040745F /* HelpsView.swift */,
+				DC8D533F2413FE33008AB667 /* PhoneContentView.swift */,
+				DC8D53412413FFBB008AB667 /* PadContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 			name = "Loan Caculator";
 			packageProductDependencies = (
 				DC53A2DB240E2F5200EECC14 /* IQKeyboardManagerSwift */,
+				DC0E57F42412DC1500E2490A /* CopyOnWriteSwift */,
 			);
 			productName = "Loan Caculator";
 			productReference = DC85DFE824051496003ECCF5 /* Loan Caculator.app */;
@@ -253,6 +262,7 @@
 			mainGroup = DC85DFDF24051496003ECCF5;
 			packageReferences = (
 				DC53A2DA240E2F5200EECC14 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				DC0E57F32412DC1500E2490A /* XCRemoteSwiftPackageReference "CopyOnWriteSwift" */,
 			);
 			productRefGroup = DC85DFE924051496003ECCF5 /* Products */;
 			projectDirPath = "";
@@ -290,7 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8D53402413FE33008AB667 /* PhoneContentView.swift in Sources */,
 				DC85E01524051851003ECCF5 /* LoanModel.swift in Sources */,
+				DC8D53422413FFBB008AB667 /* PadContentView.swift in Sources */,
 				DC85E019240576AC003ECCF5 /* LoanSummaryView.swift in Sources */,
 				DCF24D6A24101B8F0040745F /* HelpsView.swift in Sources */,
 				DC9D9E0E240A2E5F00556F3E /* CircleChartView.swift in Sources */,
@@ -466,7 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loan Caculator/Preview Content\"";
 				DEVELOPMENT_TEAM = 8C98S3WY53;
 				ENABLE_PREVIEWS = YES;
@@ -476,7 +488,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.duyquang.loancaculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -489,7 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Loan Caculator/Preview Content\"";
 				DEVELOPMENT_TEAM = 8C98S3WY53;
 				ENABLE_PREVIEWS = YES;
@@ -499,7 +511,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.duyquang.loancaculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -584,6 +596,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DC0E57F32412DC1500E2490A /* XCRemoteSwiftPackageReference "CopyOnWriteSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:duyquang91/CopyOnWriteSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
 		DC53A2DA240E2F5200EECC14 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:hackiftekhar/IQKeyboardManager.git";
@@ -595,6 +615,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DC0E57F42412DC1500E2490A /* CopyOnWriteSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC0E57F32412DC1500E2490A /* XCRemoteSwiftPackageReference "CopyOnWriteSwift" */;
+			productName = CopyOnWriteSwift;
+		};
 		DC53A2DB240E2F5200EECC14 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DC53A2DA240E2F5200EECC14 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;

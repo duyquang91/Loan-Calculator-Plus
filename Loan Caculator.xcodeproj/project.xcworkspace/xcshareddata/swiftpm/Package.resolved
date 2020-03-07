@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "CopyOnWriteSwift",
+        "repositoryURL": "git@github.com:duyquang91/CopyOnWriteSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "9da077ad2eca96989efd978ffdfd6b0f3d6a0290",
+          "version": "1.0.4"
+        }
+      },
+      {
         "package": "IQKeyboardManagerSwift",
         "repositoryURL": "git@github.com:hackiftekhar/IQKeyboardManager.git",
         "state": {

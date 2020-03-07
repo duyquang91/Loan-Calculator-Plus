@@ -10,7 +10,7 @@ import SwiftUI
 
 struct AmortizationView: View {
     
-    @State var amortizations = [AmortizationModel]()
+    let amortizations: [AmortizationModel]
     
     var body: some View {
         NavigationView {
@@ -75,7 +75,7 @@ struct AmortizationView_Previews: PreviewProvider {
                         }
                     }
                 }
-            }.listStyle(GroupedListStyle()).padding(.horizontal, -16)
+            }.listRowInsets(EdgeInsets())
         }.background(Color(UIColor.systemGroupedBackground))
     }
 }
