@@ -8,15 +8,17 @@
 
 import Foundation
 import UIKit
+import LoanCalculatorInterface
 
 public extension String {
+    func toInt() -> Int? {
+        let digits = components(separatedBy: CharacterSet(charactersIn: "0123456789").inverted).joined()
+        return Int(digits)
+    }
+
     func toDouble() -> Double? {
-        let formatter = NumberFormatter()
-        if let number = formatter.number(from: self) {
-            return Double(truncating: number)
-        }else {
-            return nil
-        }
+        let digits = components(separatedBy: CharacterSet(charactersIn: "0123456789").inverted).joined()
+        return Double(digits)
     }
     
     var localized: String {
@@ -26,11 +28,7 @@ public extension String {
 
 public extension Double {
     func toCurrencyString() -> String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.maximumFractionDigits = 0
-        
-        return formatter.string(from: NSNumber(value: self)) ?? ""
+        return Formatter.currencyFormatter.string(from: NSNumber(value: self)) ?? ""
     }
     
     func toPercentageString() -> String {
@@ -59,5 +57,33 @@ public extension Array {
 public extension UIDevice {
     static var isPhone: Bool {
         return UIDevice.current.userInterfaceIdiom == .phone
+    }
+}
+
+public extension Formatter {
+    static let currencyFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.maximumFractionDigits = 0
+        return formatter
+    }()
+}
+
+public extension LoanMethod {
+    init(fromIndex index: Int) {
+        self = index == 0 ? .flat : .balanceReduce
+    }
+}
+
+extension AmortizationModel {
+    static var mock: AmortizationModel {
+        return AmortizationModel(order: 1, principal: 150000000000000, interest: 5000000)
+    }
+
+    static var mocks: [AmortizationModel] {
+        return [AmortizationModel(order: 1, principal: 15000000, interest: 5000000),
+                AmortizationModel(order: 2, principal: 15000000, interest: 500000000000),
+                AmortizationModel(order: 3, principal: 1500000000000, interest: 5000000),
+                AmortizationModel(order: 4, principal: 15000000, interest: 5000000)]
     }
 }

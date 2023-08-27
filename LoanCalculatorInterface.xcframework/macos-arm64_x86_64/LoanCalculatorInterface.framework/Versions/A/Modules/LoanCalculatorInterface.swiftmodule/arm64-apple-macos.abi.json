@@ -1,0 +1,1030 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LoanCalculatorInterface",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoanSummary",
+        "printedName": "LoanSummary",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "totalPaid",
+            "printedName": "totalPaid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface0A7SummaryV9totalPaidSdvp",
+            "mangledName": "$s23LoanCalculatorInterface0A7SummaryV9totalPaidSdvp",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface0A7SummaryV9totalPaidSdvg",
+                "mangledName": "$s23LoanCalculatorInterface0A7SummaryV9totalPaidSdvg",
+                "moduleName": "LoanCalculatorInterface",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "totalInterest",
+            "printedName": "totalInterest",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface0A7SummaryV13totalInterestSdvp",
+            "mangledName": "$s23LoanCalculatorInterface0A7SummaryV13totalInterestSdvp",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface0A7SummaryV13totalInterestSdvg",
+                "mangledName": "$s23LoanCalculatorInterface0A7SummaryV13totalInterestSdvg",
+                "moduleName": "LoanCalculatorInterface",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "totalInterestPercetage",
+            "printedName": "totalInterestPercetage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface0A7SummaryV22totalInterestPercetageSdvp",
+            "mangledName": "$s23LoanCalculatorInterface0A7SummaryV22totalInterestPercetageSdvp",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface0A7SummaryV22totalInterestPercetageSdvg",
+                "mangledName": "$s23LoanCalculatorInterface0A7SummaryV22totalInterestPercetageSdvg",
+                "moduleName": "LoanCalculatorInterface",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "monthlyPayment",
+            "printedName": "monthlyPayment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface0A7SummaryV14monthlyPaymentSdSgvp",
+            "mangledName": "$s23LoanCalculatorInterface0A7SummaryV14monthlyPaymentSdSgvp",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface0A7SummaryV14monthlyPaymentSdSgvg",
+                "mangledName": "$s23LoanCalculatorInterface0A7SummaryV14monthlyPaymentSdSgvg",
+                "moduleName": "LoanCalculatorInterface",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "amortizations",
+            "printedName": "amortizations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[LoanCalculatorInterface.AmortizationModel]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AmortizationModel",
+                    "printedName": "LoanCalculatorInterface.AmortizationModel",
+                    "usr": "s:23LoanCalculatorInterface17AmortizationModelV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface0A7SummaryV13amortizationsSayAA17AmortizationModelVGvp",
+            "mangledName": "$s23LoanCalculatorInterface0A7SummaryV13amortizationsSayAA17AmortizationModelVGvp",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LoanCalculatorInterface.AmortizationModel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AmortizationModel",
+                        "printedName": "LoanCalculatorInterface.AmortizationModel",
+                        "usr": "s:23LoanCalculatorInterface17AmortizationModelV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface0A7SummaryV13amortizationsSayAA17AmortizationModelVGvg",
+                "mangledName": "$s23LoanCalculatorInterface0A7SummaryV13amortizationsSayAA17AmortizationModelVGvg",
+                "moduleName": "LoanCalculatorInterface",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(totalPaid:totalInterest:totalInterestPercetage:monthlyPayment:amortizations:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoanSummary",
+                "printedName": "LoanCalculatorInterface.LoanSummary",
+                "usr": "s:23LoanCalculatorInterface0A7SummaryV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[LoanCalculatorInterface.AmortizationModel]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AmortizationModel",
+                    "printedName": "LoanCalculatorInterface.AmortizationModel",
+                    "usr": "s:23LoanCalculatorInterface17AmortizationModelV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23LoanCalculatorInterface0A7SummaryV9totalPaid0E8Interest0eG9Percetage14monthlyPayment13amortizationsACSd_S3dSgSayAA17AmortizationModelVGtcfc",
+            "mangledName": "$s23LoanCalculatorInterface0A7SummaryV9totalPaid0E8Interest0eG9Percetage14monthlyPayment13amortizationsACSd_S3dSgSayAA17AmortizationModelVGtcfc",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:23LoanCalculatorInterface0A7SummaryV",
+        "mangledName": "$s23LoanCalculatorInterface0A7SummaryV",
+        "moduleName": "LoanCalculatorInterface",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AmortizationModel",
+        "printedName": "AmortizationModel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "order",
+            "printedName": "order",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface17AmortizationModelV5orderSivp",
+            "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV5orderSivp",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface17AmortizationModelV5orderSivg",
+                "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV5orderSivg",
+                "moduleName": "LoanCalculatorInterface",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "principal",
+            "printedName": "principal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface17AmortizationModelV9principalSdvp",
+            "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV9principalSdvp",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface17AmortizationModelV9principalSdvg",
+                "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV9principalSdvg",
+                "moduleName": "LoanCalculatorInterface",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "interest",
+            "printedName": "interest",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface17AmortizationModelV8interestSdvp",
+            "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV8interestSdvp",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface17AmortizationModelV8interestSdvg",
+                "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV8interestSdvg",
+                "moduleName": "LoanCalculatorInterface",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "repayment",
+            "printedName": "repayment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface17AmortizationModelV9repaymentSdvp",
+            "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV9repaymentSdvp",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface17AmortizationModelV9repaymentSdvg",
+                "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV9repaymentSdvg",
+                "moduleName": "LoanCalculatorInterface",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(order:principal:interest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AmortizationModel",
+                "printedName": "LoanCalculatorInterface.AmortizationModel",
+                "usr": "s:23LoanCalculatorInterface17AmortizationModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23LoanCalculatorInterface17AmortizationModelV5order9principal8interestACSi_S2dtcfc",
+            "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV5order9principal8interestACSi_S2dtcfc",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface17AmortizationModelV2idSivp",
+            "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV2idSivp",
+            "moduleName": "LoanCalculatorInterface",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface17AmortizationModelV2idSivg",
+                "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV2idSivg",
+                "moduleName": "LoanCalculatorInterface",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface17AmortizationModelV9hashValueSivp",
+            "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV9hashValueSivp",
+            "moduleName": "LoanCalculatorInterface",
+            "implicit": true,
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface17AmortizationModelV9hashValueSivg",
+                "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV9hashValueSivg",
+                "moduleName": "LoanCalculatorInterface",
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23LoanCalculatorInterface17AmortizationModelV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV4hash4intoys6HasherVz_tF",
+            "moduleName": "LoanCalculatorInterface",
+            "implicit": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AmortizationModel",
+                "printedName": "LoanCalculatorInterface.AmortizationModel",
+                "usr": "s:23LoanCalculatorInterface17AmortizationModelV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AmortizationModel",
+                "printedName": "LoanCalculatorInterface.AmortizationModel",
+                "usr": "s:23LoanCalculatorInterface17AmortizationModelV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23LoanCalculatorInterface17AmortizationModelV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV2eeoiySbAC_ACtFZ",
+            "moduleName": "LoanCalculatorInterface",
+            "static": true,
+            "implicit": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:23LoanCalculatorInterface17AmortizationModelV",
+        "mangledName": "$s23LoanCalculatorInterface17AmortizationModelV",
+        "moduleName": "LoanCalculatorInterface",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LoanCalculatorInterface",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoanMethod",
+        "printedName": "LoanMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "flat",
+            "printedName": "flat",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LoanCalculatorInterface.LoanMethod.Type) -> LoanCalculatorInterface.LoanMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoanMethod",
+                    "printedName": "LoanCalculatorInterface.LoanMethod",
+                    "usr": "s:23LoanCalculatorInterface0A6MethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LoanCalculatorInterface.LoanMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoanMethod",
+                        "printedName": "LoanCalculatorInterface.LoanMethod",
+                        "usr": "s:23LoanCalculatorInterface0A6MethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23LoanCalculatorInterface0A6MethodO4flatyA2CmF",
+            "mangledName": "$s23LoanCalculatorInterface0A6MethodO4flatyA2CmF",
+            "moduleName": "LoanCalculatorInterface"
+          },
+          {
+            "kind": "Var",
+            "name": "balanceReduce",
+            "printedName": "balanceReduce",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(LoanCalculatorInterface.LoanMethod.Type) -> LoanCalculatorInterface.LoanMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoanMethod",
+                    "printedName": "LoanCalculatorInterface.LoanMethod",
+                    "usr": "s:23LoanCalculatorInterface0A6MethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "LoanCalculatorInterface.LoanMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoanMethod",
+                        "printedName": "LoanCalculatorInterface.LoanMethod",
+                        "usr": "s:23LoanCalculatorInterface0A6MethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23LoanCalculatorInterface0A6MethodO13balanceReduceyA2CmF",
+            "mangledName": "$s23LoanCalculatorInterface0A6MethodO13balanceReduceyA2CmF",
+            "moduleName": "LoanCalculatorInterface"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoanMethod",
+                "printedName": "LoanCalculatorInterface.LoanMethod",
+                "usr": "s:23LoanCalculatorInterface0A6MethodO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoanMethod",
+                "printedName": "LoanCalculatorInterface.LoanMethod",
+                "usr": "s:23LoanCalculatorInterface0A6MethodO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23LoanCalculatorInterface0A6MethodO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s23LoanCalculatorInterface0A6MethodO2eeoiySbAC_ACtFZ",
+            "moduleName": "LoanCalculatorInterface",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23LoanCalculatorInterface0A6MethodO9hashValueSivp",
+            "mangledName": "$s23LoanCalculatorInterface0A6MethodO9hashValueSivp",
+            "moduleName": "LoanCalculatorInterface",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23LoanCalculatorInterface0A6MethodO9hashValueSivg",
+                "mangledName": "$s23LoanCalculatorInterface0A6MethodO9hashValueSivg",
+                "moduleName": "LoanCalculatorInterface",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23LoanCalculatorInterface0A6MethodO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s23LoanCalculatorInterface0A6MethodO4hash4intoys6HasherVz_tF",
+            "moduleName": "LoanCalculatorInterface",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:23LoanCalculatorInterface0A6MethodO",
+        "mangledName": "$s23LoanCalculatorInterface0A6MethodO",
+        "moduleName": "LoanCalculatorInterface",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoanCalculatorInterface",
+        "printedName": "LoanCalculatorInterface",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "calculatorLoan",
+            "printedName": "calculatorLoan(byAmount:interest:months:method:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoanSummary",
+                "printedName": "LoanCalculatorInterface.LoanSummary",
+                "usr": "s:23LoanCalculatorInterface0A7SummaryV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoanMethod",
+                "printedName": "LoanCalculatorInterface.LoanMethod",
+                "usr": "s:23LoanCalculatorInterface0A6MethodO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23LoanCalculatorInterfaceAAP010calculatorA08byAmount8interest6months6methodAA0A7SummaryVSd_SdSiAA0A6MethodOtF",
+            "mangledName": "$s23LoanCalculatorInterfaceAAP010calculatorA08byAmount8interest6months6methodAA0A7SummaryVSd_SdSiAA0A6MethodOtF",
+            "moduleName": "LoanCalculatorInterface",
+            "genericSig": "<τ_0_0 where τ_0_0 : LoanCalculatorInterface.LoanCalculatorInterface>",
+            "sugared_genericSig": "<Self where Self : LoanCalculatorInterface.LoanCalculatorInterface>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:23LoanCalculatorInterfaceAAP",
+        "mangledName": "$s23LoanCalculatorInterfaceAAP",
+        "moduleName": "LoanCalculatorInterface",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

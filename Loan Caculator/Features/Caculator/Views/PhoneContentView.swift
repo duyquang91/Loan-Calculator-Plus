@@ -32,13 +32,18 @@ struct PhoneContentView: View {
                         Text("loan_amount").font(.headline)
                         
                         VStack(alignment: .leading, spacing: 0) {
-                            TextField("", text: $viewModel.amountString, onEditingChanged: { edittingChanged in
-                                self.isShowAmountHints = edittingChanged
-                            })
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .keyboardType(.numberPad)
-                                .font(.body)
-                            
+                            TextField("",
+                                      text: $viewModel.amountString,
+                                      onEditingChanged: { self.isShowAmountHints = $0 })
+                                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                                    .keyboardType(.numberPad)
+                                    .font(.body)
+                                    .onChange(of: viewModel.amountString, perform: { newValue in
+                                        let valueFormatted = Formatter.currencyFormatter.string(from: NSNumber(value: newValue.toDouble() ?? 0)) ?? ""
+                                        if viewModel.amountString != valueFormatted {
+                                            viewModel.amountString = valueFormatted
+                                        }
+                                    })
                             Text(viewModel.amountErrorString).foregroundColor(.red).font(.subheadline)
                             
                             if isShowAmountHints {

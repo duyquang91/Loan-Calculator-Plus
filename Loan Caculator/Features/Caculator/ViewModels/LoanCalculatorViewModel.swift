@@ -8,6 +8,8 @@
 
 import Foundation
 import Combine
+import LoanCalculatorInterface
+import DyLibRuntimeLoader
 
 public class LoanCalculatorViewModel: ObservableObject {
     // Inputs
@@ -31,6 +33,11 @@ public class LoanCalculatorViewModel: ObservableObject {
     private var disposeBag = Set<AnyCancellable>()
     
     public init() {
+        // Dynamic load the binary
+        let loanCalculator = try! dyLibLoad(withSymbol: "loan_calculator",
+                                            fromFramework: .framework(name: "LoanCalculatorImplementation", directory: Directory.frameworks),
+                                            forType: LoanCalculatorInterface.self)
+
         // Input validations
         $amountString.map { $0.isEmpty || $0.toDouble() != nil ? "" : "invalid_input".localized }
             .assign(to: \.amountErrorString, on: self)
@@ -59,51 +66,27 @@ public class LoanCalculatorViewModel: ObservableObject {
         .store(in: &disposeBag)
         
         // Calculations
-        Publishers.CombineLatest4($amountString, $interestString, $termString, $termType.combineLatest($loanMethod)).sink { [weak self] tuple in
-            guard let weakSelf = self,
-                let amount = tuple.0.toDouble(),
-                let interest = tuple.1.toDouble(),
-                let term = tuple.2.toDouble(),
-                interest >= 0 && interest <= 100 && term > 0 else { self?.isInputsValid = false; return }
-            
-            weakSelf.isInputsValid = true
-            weakSelf.amortizations.removeAll()
-            let months = tuple.3.0 == 0 ? term * 12 : term
-            
-            // FRM
-            if tuple.3.1 == 0 {
-                let interestPerMonth = amount * interest / 1200
-                
-                weakSelf.totalPaidString = (amount + interestPerMonth * months).toCurrencyString()
-                weakSelf.totalInterestString = (interestPerMonth * months).toCurrencyString()
-                weakSelf.totalInterestPercentage = (interestPerMonth * months) / (amount + interestPerMonth * months)
-                weakSelf.monthyPaidString = (amount / months + interestPerMonth).toCurrencyString()
-                
-                // Amortizations
-                for order in 1...Int(months) {
-                    weakSelf.amortizations.append(AmortizationModel(order: order,
-                                                                    principal: amount / months,
-                                                                    interest: interestPerMonth))
-                }
-            } // RBM
-            else {
-                // Amortizations
-                for order in 1...Int(months) {
-                    weakSelf.amortizations.append(AmortizationModel(order: order,
-                                                                    principal: amount / months,
-                                                                    interest: (amount - amount / months * Double(order - 1)) * interest / 1200)) }
-                let totalInterest = weakSelf.amortizations.map { $0.interest }.reduce(0, +)
-                weakSelf.totalInterestString = totalInterest.toCurrencyString()
-                weakSelf.totalPaidString = (amount + totalInterest).toCurrencyString()
-                weakSelf.totalInterestPercentage = totalInterest / (amount + totalInterest)
-                if let firstRepayment = weakSelf.amortizations.first?.repayment {
-                    weakSelf.monthyPaidString = firstRepayment.toCurrencyString()
-                }
+        Publishers.CombineLatest4($amountString, $interestString, $termString, $termType.combineLatest($loanMethod))
+            .sink { [weak self] tuple in
+                guard let weakSelf = self,
+                      let amount = tuple.0.toDouble(),
+                      let interest = tuple.1.toDouble(),
+                      let term = tuple.2.toInt(),
+                      interest >= 0 && interest <= 100 && term > 0 else { self?.isInputsValid = false; return }
+
+                weakSelf.isInputsValid = true
+                weakSelf.amortizations.removeAll()
+
+                let months: Int = tuple.3.0 == 0 ? term * 12 : term
+                let result = loanCalculator.calculatorLoan(byAmount: amount, interest: interest, months: months, method: .init(fromIndex: tuple.3.1))
+
+                weakSelf.totalPaidString = result.totalPaid.toCurrencyString()
+                weakSelf.totalInterestString = result.totalInterest.toCurrencyString()
+                weakSelf.totalInterestPercentage = result.totalInterestPercetage
+                weakSelf.monthyPaidString = result.monthlyPayment?.toCurrencyString() ?? result.amortizations.first!.repayment.toCurrencyString()
+                weakSelf.amortizations = result.amortizations
             }
-            
-            
-        }.store(in: &disposeBag)
-        
+            .store(in: &disposeBag)
     }
 }
 

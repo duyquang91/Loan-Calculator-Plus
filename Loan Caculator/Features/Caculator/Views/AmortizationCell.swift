@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import LoanCalculatorInterface
 
 struct AmortizationCell: View {
     

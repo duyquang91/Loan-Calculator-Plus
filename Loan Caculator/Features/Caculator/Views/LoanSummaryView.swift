@@ -15,7 +15,7 @@ public struct LoanSummaryView: View {
     
     let firstColor: Color = Color(UIColor.systemBlue)
     let secondColor: Color = Color(UIColor.systemOrange)
-    let lineWidth: CGFloat = 8
+    let lineWidth: CGFloat = 12
     public var body: some View {
         HStack(alignment: .center, spacing: 16) {
             CircleChartView(firstColor: firstColor,

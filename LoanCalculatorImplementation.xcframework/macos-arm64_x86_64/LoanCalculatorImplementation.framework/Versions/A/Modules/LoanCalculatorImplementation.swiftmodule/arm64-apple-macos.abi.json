@@ -1,0 +1,180 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "LoanCalculatorInterface",
+        "printedName": "LoanCalculatorInterface",
+        "declKind": "Import",
+        "moduleName": "LoanCalculatorImplementation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DyLibRuntimeLoader",
+        "printedName": "DyLibRuntimeLoader",
+        "declKind": "Import",
+        "moduleName": "LoanCalculatorImplementation"
+      },
+      {
+        "kind": "Function",
+        "name": "registerDynamicLoading",
+        "printedName": "registerDynamicLoading()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafeMutableRawPointer",
+            "printedName": "Swift.UnsafeMutableRawPointer",
+            "usr": "s:Sv"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)registerDynamicLoading",
+        "mangledName": "$s28LoanCalculatorImplementation22registerDynamicLoadingSvyF",
+        "moduleName": "LoanCalculatorImplementation",
+        "declAttributes": [
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoanCalculatorImplementation",
+        "printedName": "LoanCalculatorImplementation",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "calculatorLoan",
+            "printedName": "calculatorLoan(byAmount:interest:months:method:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoanSummary",
+                "printedName": "LoanCalculatorInterface.LoanSummary",
+                "usr": "s:23LoanCalculatorInterface0A7SummaryV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoanMethod",
+                "printedName": "LoanCalculatorInterface.LoanMethod",
+                "usr": "s:23LoanCalculatorInterface0A6MethodO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:28LoanCalculatorImplementationAAV010calculatorA08byAmount8interest6months6method0aB9Interface0A7SummaryVSd_SdSiAH0A6MethodOtF",
+            "mangledName": "$s28LoanCalculatorImplementationAAV010calculatorA08byAmount8interest6months6method0aB9Interface0A7SummaryVSd_SdSiAH0A6MethodOtF",
+            "moduleName": "LoanCalculatorImplementation",
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoanCalculatorImplementation",
+                "printedName": "LoanCalculatorImplementation.LoanCalculatorImplementation",
+                "usr": "s:28LoanCalculatorImplementationAAV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:28LoanCalculatorImplementationAAVABycfc",
+            "mangledName": "$s28LoanCalculatorImplementationAAVABycfc",
+            "moduleName": "LoanCalculatorImplementation",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:28LoanCalculatorImplementationAAV",
+        "mangledName": "$s28LoanCalculatorImplementationAAV",
+        "moduleName": "LoanCalculatorImplementation",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LoanCalculatorInterface",
+            "printedName": "LoanCalculatorInterface",
+            "usr": "s:23LoanCalculatorInterfaceAAP",
+            "mangledName": "$s23LoanCalculatorInterfaceAAP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/steve.dao\/Documents\/LoanMethodCalculator\/Sources\/LoanCalculatorImplementation\/LoanCalculatorImplementation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 638,
+      "length": 4,
+      "value": "1200"
+    },
+    {
+      "filePath": "\/Users\/steve.dao\/Documents\/LoanMethodCalculator\/Sources\/LoanCalculatorImplementation\/LoanCalculatorImplementation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 676,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/steve.dao\/Documents\/LoanMethodCalculator\/Sources\/LoanCalculatorImplementation\/LoanCalculatorImplementation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1422,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/steve.dao\/Documents\/LoanMethodCalculator\/Sources\/LoanCalculatorImplementation\/LoanCalculatorImplementation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1712,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/steve.dao\/Documents\/LoanMethodCalculator\/Sources\/LoanCalculatorImplementation\/LoanCalculatorImplementation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1729,
+      "length": 4,
+      "value": "1200"
+    },
+    {
+      "filePath": "\/Users\/steve.dao\/Documents\/LoanMethodCalculator\/Sources\/LoanCalculatorImplementation\/LoanCalculatorImplementation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1811,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

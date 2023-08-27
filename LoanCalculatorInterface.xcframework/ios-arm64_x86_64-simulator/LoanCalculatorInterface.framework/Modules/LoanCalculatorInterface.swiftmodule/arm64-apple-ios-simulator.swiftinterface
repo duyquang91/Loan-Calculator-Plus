@@ -1,0 +1,50 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LoanCalculatorInterface
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+public struct LoanSummary {
+  public let totalPaid: Swift.Double
+  public let totalInterest: Swift.Double
+  public let totalInterestPercetage: Swift.Double
+  public let monthlyPayment: Swift.Double?
+  public let amortizations: [AmortizationModel]
+  public init(totalPaid: Swift.Double, totalInterest: Swift.Double, totalInterestPercetage: Swift.Double, monthlyPayment: Swift.Double?, amortizations: [AmortizationModel])
+}
+public struct AmortizationModel {
+  public let order: Swift.Int
+  public let principal: Swift.Double
+  public let interest: Swift.Double
+  public var repayment: Swift.Double {
+    get
+  }
+  public init(order: Swift.Int, principal: Swift.Double, interest: Swift.Double)
+}
+extension AmortizationModel : Swift.Identifiable, Swift.Hashable {
+  public var id: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: AmortizationModel, b: AmortizationModel) -> Swift.Bool
+  public typealias ID = Swift.Int
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum LoanMethod {
+  case flat
+  case balanceReduce
+  public static func == (a: LoanMethod, b: LoanMethod) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol LoanCalculatorInterface {
+  func calculatorLoan(byAmount: Swift.Double, interest: Swift.Double, months: Swift.Int, method: LoanMethod) -> LoanSummary
+}
+extension LoanMethod : Swift.Equatable {}
+extension LoanMethod : Swift.Hashable {}
