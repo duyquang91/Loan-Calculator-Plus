@@ -10,7 +10,6 @@
 		5ADFAC622A9B2EA000E67E39 /* DyLibRuntimeLoader in CopyFiles */ = {isa = PBXBuildFile; productRef = 5AEC96F92A9B22550009DACC /* DyLibRuntimeLoader */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		5ADFAC632A9B2F0800E67E39 /* LoanCalculatorInterface.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1BFCC22A9B1EDB00D58B8D /* LoanCalculatorInterface.xcframework */; };
 		5ADFAC642A9B2F0800E67E39 /* LoanCalculatorInterface.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A1BFCC22A9B1EDB00D58B8D /* LoanCalculatorInterface.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5ADFAC702A9B345F00E67E39 /* LoanCalculatorImplementation.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5ADFAC6F2A9B345F00E67E39 /* LoanCalculatorImplementation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5AEC96FA2A9B22550009DACC /* DyLibRuntimeLoader in Frameworks */ = {isa = PBXBuildFile; productRef = 5AEC96F92A9B22550009DACC /* DyLibRuntimeLoader */; };
 		DC53A2DC240E2F5200EECC14 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC53A2DB240E2F5200EECC14 /* IQKeyboardManagerSwift */; };
 		DC53A2DE240E72F500EECC14 /* AmortizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53A2DD240E72F500EECC14 /* AmortizationView.swift */; };
@@ -52,7 +51,6 @@
 			files = (
 				5ADFAC622A9B2EA000E67E39 /* DyLibRuntimeLoader in CopyFiles */,
 				5ADFAC642A9B2F0800E67E39 /* LoanCalculatorInterface.xcframework in CopyFiles */,
-				5ADFAC702A9B345F00E67E39 /* LoanCalculatorImplementation.xcframework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +59,10 @@
 /* Begin PBXFileReference section */
 		5A1BFCBE2A9B1EAF00D58B8D /* LoanCalculatorInterface.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LoanCalculatorInterface.xcframework; path = ../LoanMethodCalculator/LoanCalculatorInterface.xcframework; sourceTree = "<group>"; };
 		5A1BFCC22A9B1EDB00D58B8D /* LoanCalculatorInterface.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LoanCalculatorInterface.xcframework; sourceTree = "<group>"; };
+		5A4A9E282A9EF636009B7E80 /* LoanCalculatorImplementation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LoanCalculatorImplementation.xcframework; sourceTree = "<group>"; };
+		5AB44BC52A9EF89600374153 /* LoanCalculatorImplementation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LoanCalculatorImplementation.xcframework; sourceTree = "<group>"; };
+		5AB44BC72A9EF8D300374153 /* LoanCalculatorImplementation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoanCalculatorImplementation.framework; path = "LoanCalculatorImplementation.xcframework/ios-arm64/LoanCalculatorImplementation.framework"; sourceTree = "<group>"; };
+		5AB44BC92A9EF8F300374153 /* LoanCalculatorImplementation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LoanCalculatorImplementation.xcframework; sourceTree = "<group>"; };
 		5ADFAC652A9B2F5700E67E39 /* LoanCalculatorImplementation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LoanCalculatorImplementation.xcframework; sourceTree = "<group>"; };
 		5ADFAC672A9B2FA200E67E39 /* LoanCalculatorImplementation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LoanCalculatorImplementation.xcframework; sourceTree = "<group>"; };
 		5ADFAC6A2A9B305600E67E39 /* LoanCalculatorImplementation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LoanCalculatorImplementation.xcframework; sourceTree = "<group>"; };
@@ -126,12 +128,16 @@
 		DC85DFDF24051496003ECCF5 = {
 			isa = PBXGroup;
 			children = (
+				5AB44BC92A9EF8F300374153 /* LoanCalculatorImplementation.xcframework */,
+				5AB44BC72A9EF8D300374153 /* LoanCalculatorImplementation.framework */,
 				5AEC96F62A9B21E30009DACC /* LoanCalculatorImplementation.xcframework */,
 				5ADFAC652A9B2F5700E67E39 /* LoanCalculatorImplementation.xcframework */,
 				5ADFAC672A9B2FA200E67E39 /* LoanCalculatorImplementation.xcframework */,
 				5ADFAC6A2A9B305600E67E39 /* LoanCalculatorImplementation.xcframework */,
 				5ADFAC6C2A9B325F00E67E39 /* LoanCalculatorImplementation.xcframework */,
 				5ADFAC6F2A9B345F00E67E39 /* LoanCalculatorImplementation.xcframework */,
+				5A4A9E282A9EF636009B7E80 /* LoanCalculatorImplementation.xcframework */,
+				5AB44BC52A9EF89600374153 /* LoanCalculatorImplementation.xcframework */,
 				DC85DFEA24051496003ECCF5 /* Loan Caculator */,
 				DC85E00124051498003ECCF5 /* Loan CaculatorTests */,
 				DC85DFE924051496003ECCF5 /* Products */,
@@ -241,6 +247,7 @@
 				DC85DFE524051496003ECCF5 /* Frameworks */,
 				DC85DFE624051496003ECCF5 /* Resources */,
 				5AEC96F52A9B21D40009DACC /* CopyFiles */,
+				5A01E6B62A9EFBD800205E2B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -336,6 +343,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A01E6B62A9EFBD800205E2B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/LoanCalculatorImplementation.xcframework/ios-arm64/LoanCalculatorImplementation.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/LoanCalculatorImplementation.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/homebrew/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC85DFE424051496003ECCF5 /* Sources */ = {
@@ -530,7 +559,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.duyquang.loancaculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -554,7 +583,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.duyquang.loancaculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
